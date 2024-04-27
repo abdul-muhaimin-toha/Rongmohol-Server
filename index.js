@@ -28,6 +28,12 @@ async function run() {
     const artcollection = database.collection('artCollection');
     const categoryCollection = database.collection('categoryCollection');
 
+    app.get('/arts-first-six', async (req, res) => {
+      const cursor = artcollection.find();
+      const result = (await cursor.toArray()).slice(0, 6);
+      res.send(result);
+    });
+
     app.get('/art-categories', async (req, res) => {
       const cursor = categoryCollection.find();
       const result = await cursor.toArray();
