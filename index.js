@@ -26,6 +26,13 @@ async function run() {
   try {
     const database = client.db('artDB');
     const artcollection = database.collection('artCollection');
+    const categoryCollection = database.collection('categoryCollection');
+
+    app.get('/art-categories', async (req, res) => {
+      const cursor = categoryCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    });
 
     app.post('/arts', async (req, res) => {
       const doc = req.body;
