@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -34,6 +34,13 @@ async function run() {
       res.send(result);
     });
 
+    app.get('/arts/:id', async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await artcollection.findOne(query);
+      res.send(result);
+    });
+
     app.get('/arts-first-six', async (req, res) => {
       const cursor = artcollection.find();
       const result = (await cursor.toArray()).slice(0, 6);
@@ -57,6 +64,30 @@ async function run() {
     app.post('/arts', async (req, res) => {
       const doc = req.body;
       const result = await artcollection.insertOne(doc);
+      res.send(result);
+    });
+
+    app.put('/arts/:id', async (req, res) => {
+      const id = req.params.id;
+      const updatedArt = req.body;
+      const filter = { _id: new ObjectId(id) };
+      const options = { upsert: true };
+      const updateDoc = {
+        $set: {
+          title: updatedArt.title,
+          category: updatedArt.category,
+          description: updatedArt.description,
+          price: updatedArt.price,
+          rating: updatedArt.rating,
+          customizable: updatedArt.customizable,
+          processing_time: updatedArt.processing_time,
+          stock_status: updatedArt.stock_status,
+          img_URL: updatedArt.img_URL,
+          posted_by_name: updatedArt.posted_by_name,
+          posted_by_email: updatedArt.posted_by_email,
+        },
+      };
+      const result = await artcollection.updateOne(filter, updateDoc, options);
       res.send(result);
     });
 
