@@ -34,6 +34,15 @@ async function run() {
       res.send(result);
     });
 
+    app.get('/arts-by-category/:category', async (req, res) => {
+      const category = req.params.category;
+      console.log(category);
+      const query = { category: category };
+      const cursor = artcollection.find(query);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
     app.get('/arts/:id', async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
@@ -47,7 +56,7 @@ async function run() {
       res.send(result);
     });
 
-    app.get('/my-arts:email', async (req, res) => {
+    app.get('/my-arts/:email', async (req, res) => {
       const email = req.params.email;
       const query = { posted_by_email: email };
       const cursor = artcollection.find(query);
