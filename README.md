@@ -1,6 +1,8 @@
 # Rongmohol Client
 
-## Milestone: 10, Assignment: 10 (Rongmohol). Project based assignment for Progmming Hero course.
+### Selected Category: Painting and Drawing
+
+### Milestone: 10, Assignment: 10 (Rongmohol). Project based assignment for Progmming Hero course.
 
 [Live Website Link](https://skyline-sanctuary.web.app/)
 
