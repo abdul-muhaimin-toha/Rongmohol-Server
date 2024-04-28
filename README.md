@@ -4,7 +4,7 @@
 
 ### Milestone: 10, Assignment: 10 (Rongmohol). Project based assignment for Progmming Hero course.
 
-[Live Website Link](https://skyline-sanctuary.web.app/)
+[Live Website Link](https://rongmohol.netlify.app/)
 
 [Client Site Repository Link](https://github.com/programming-hero-web-course-4/B9A10-client-side-abdul-muhaimin-toha)
 
