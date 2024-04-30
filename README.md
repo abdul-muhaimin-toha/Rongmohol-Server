@@ -36,6 +36,8 @@
 
 - Axios
 
+- React Helmet Async
+
 - Firebase
 
 - React Hook Form
