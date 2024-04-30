@@ -28,13 +28,13 @@ async function run() {
     const artcollection = database.collection('artCollection');
     const categoryCollection = database.collection('categoryCollection');
 
-    app.get('/arts-all', async (req, res) => {
+    app.get('/arts', async (req, res) => {
       const cursor = artcollection.find();
       const result = await cursor.toArray();
       res.send(result);
     });
 
-    app.get('/arts-by-category/:category', async (req, res) => {
+    app.get('/arts/categories/:category', async (req, res) => {
       const category = req.params.category;
       console.log(category);
       const query = { category: category };
@@ -56,7 +56,7 @@ async function run() {
       res.send(result);
     });
 
-    app.get('/my-arts/:email', async (req, res) => {
+    app.get('/arts/users/:email', async (req, res) => {
       const email = req.params.email;
       const query = { posted_by_email: email };
       const cursor = artcollection.find(query);
@@ -64,7 +64,7 @@ async function run() {
       res.send(result);
     });
 
-    app.get('/art-categories', async (req, res) => {
+    app.get('/arts-categories', async (req, res) => {
       const cursor = categoryCollection.find();
       const result = await cursor.toArray();
       res.send(result);
