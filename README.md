@@ -36,6 +36,8 @@
 
 - Axios
 
+- - Locomotive Scroll
+
 - React Helmet Async
 
 - Firebase
