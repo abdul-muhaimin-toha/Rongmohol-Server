@@ -1,14 +1,12 @@
 # Rongmohol Client
 
-### Selected Category: Painting and Drawing
-
-### Milestone: 10, Assignment: 10 (Rongmohol). Project based assignment for Progmming Hero course.
+Rongmohol is a React-powered art platform enabling users to share, explore, and engage with diverse artworks. Leveraging Node.js and MongoDB, it offers seamless user authentication and a dynamic art gallery experience.
 
 [Live Website Link](https://rongmohol.netlify.app/)
 
-[Client Site Repository Link](https://github.com/programming-hero-web-course-4/B9A10-client-side-abdul-muhaimin-toha)
+[Client Site Repository Link](https://github.com/abdul-muhaimin-toha/Rongmohol-Client)
 
-[Server Site Repository Link](https://github.com/programming-hero-web-course-4/b9a10-server-side-abdul-muhaimin-toha)
+[Server Site Repository Link](https://github.com/abdul-muhaimin-toha/Rongmohol-Server)
 
 - Complte website using MongoDb, Express Js, React and Node
 
@@ -34,9 +32,9 @@
 
 - Tanstack Query
 
-- Axios
+- Locomotive Scroll
 
-- - Locomotive Scroll
+- Axios
 
 - React Helmet Async
 
