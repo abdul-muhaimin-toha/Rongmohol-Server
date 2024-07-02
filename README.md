@@ -1,49 +1,46 @@
-# Rongmohol Client
+# Rongmohol Server
 
 Rongmohol is a React-powered art platform enabling users to share, explore, and engage with diverse artworks. Leveraging Node.js and MongoDB, it offers seamless user authentication and a dynamic art gallery experience.
 
-[Live Website Link](https://rongmohol.netlify.app/)
+## Links
 
-[Client Site Repository Link](https://github.com/abdul-muhaimin-toha/Rongmohol-Client)
+- [Live Website](https://rongmohol.netlify.app/)
+- [Client Site Repository](https://github.com/abdul-muhaimin-toha/Rongmohol-Client)
+- [Server Site Repository](https://github.com/abdul-muhaimin-toha/Rongmohol-Server)
 
-[Server Site Repository Link](https://github.com/abdul-muhaimin-toha/Rongmohol-Server)
+## Run Locally
 
-- Complte website using MongoDb, Express Js, React and Node
+To run Red Wave locally, follow these steps:
 
-- By browsing this website you can upload, see edit and get arts.
+```sh
+npm install
+npm run dev
+```
 
-- If you are registered user you can see details about each art in a details page.
+## Features
 
-- This website contains mutiple pages such as Home, All Arts, Arts DB, My Arts, Update Art, Browser Art By Category, Add Art, Error Page, Sign In, Registration.
+- Registration and authentication using email or social media accounts.
+- Dynamic art gallery with pages like Home, All Arts, Arts DB, My Arts, Update Art, Browse Art By Category, Add Art, Error Page, Sign In, Registration.
+- Some pages accessible to all, while others are private for registered users.
+- Mobile, tablet, and large screen-friendly design.
+- Secure authentication with Firebase using environmental variables.
 
-- Some of these pages are open for every one and some are private for registred users.
+## Technology Stack
 
-- You can get registered with your email or social media accounts.
+- **Database:** MongoDB for storing artwork and user data.
+- **Backend:** Node.js and Express.js for server-side logic and API endpoints.
+- **Frontend:** React for building a responsive and interactive user interface.
 
-- This website is mobile, tablet and big screen friendly.
+## NPM Packages Used
 
-- The firebase authentication is secured by envirnmental variable.
-
-## NPM Packages used in this project
-
-- lottie React
-
-- React Simple Typewriter
-
-- Tanstack Query
-
-- Locomotive Scroll
-
-- Axios
-
-- React Helmet Async
-
-- Firebase
-
-- React Hook Form
-
-- React Hot Toast
-
-- Sweet Alert
-
-- Swiper slider
+- `lottie-react`
+- `react-simple-typewriter`
+- `tanstack/query`
+- `locomotive-scroll`
+- `axios`
+- `react-helmet-async`
+- `firebase`
+- `react-hook-form`
+- `react-hot-toast`
+- `sweetalert`
+- `swiper`
