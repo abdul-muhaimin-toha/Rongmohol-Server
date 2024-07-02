@@ -33,14 +33,4 @@ npm run dev
 
 ## NPM Packages Used
 
-- `lottie-react`
-- `react-simple-typewriter`
-- `tanstack/query`
-- `locomotive-scroll`
-- `axios`
-- `react-helmet-async`
-- `firebase`
-- `react-hook-form`
-- `react-hot-toast`
-- `sweetalert`
-- `swiper`
+ `lottie-react` `react-simple-typewriter` `tanstack/query` `locomotive-scroll` `axios` `react-helmet-async` `firebase` `react-hook-form` `react-hot-toast` `sweetalert`  `swiper`
