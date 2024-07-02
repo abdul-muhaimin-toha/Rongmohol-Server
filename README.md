@@ -10,7 +10,7 @@ Rongmohol is a React-powered art platform enabling users to share, explore, and 
 
 ## Run Locally
 
-To run Red Wave locally, follow these steps:
+To run Rongmohol locally, follow these steps:
 
 ```sh
 npm install
